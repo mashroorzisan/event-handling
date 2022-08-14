@@ -32,5 +32,9 @@ function makePurple() {
 const orangeBtn = document.getElementById('orange');
 orangeBtn.addEventListener('click', function () {
     mainBody.style.backgroundColor = "orange";
-}
-);
+});
+
+//method 5: addeventlistner directly
+document.getElementById('lg').addEventListener('click', function () {
+    mainBody.style.backgroundColor = 'lightgray';
+});

@@ -11,6 +11,17 @@
 <body>
     <h1>This is a test about dom-event</h1>
     <button onclick="console.log(12)">click me</button>
+    <button onclick="console.log('you are stupid zisan')">another button</button>
+    <br>
+    <!-- option 1 : directly-->
+    <button onclick='document.body.style.backgroundColor = "red"'>Make red</button>
+    <!-- option 2 : calling function -->
+    <button onclick="makeBlue()" id="blue">Make blue</button>
+    <!-- option 3 : making a function -->
+    <button id="yellow">Yellow click</button>
+    <!-- option 3 another : making a function -->
+    <button id="green">Green click</button>
+
     <script src='js/event.js'></script>
 </body>
 

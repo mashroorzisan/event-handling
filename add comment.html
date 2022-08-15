@@ -9,7 +9,56 @@
 </head>
 
 <body>
+    <section id='post'>
+        <h1>This is post</h1>
+        <span>11:30 pm</span> <span>privacy: public</span>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, exercitationem sapiente atque laudantium
+            dolores
+            totam! Quidem excepturi possimus esse beatae, cupiditate ipsam totam odio dolorum itaque, nesciunt ad
+            architecto
+            inventore?
+        </p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus temporibus inventore doloribus suscipit, ipsa
+            ducimus consequuntur consequatur illo totam itaque.</p>
+        <hr>
 
+        <h3>comments</h3>
+        <hr>
+    </section>
+    <section id='comment-section'>
+
+    </section>
+
+    <textarea name="comment" id="comment-text" cols="60" rows="10"></textarea>
+    <br><button id='post-btn'>Post</button>
+
+
+
+    <script>
+        //step1: add event listener to the button
+        document.getElementById('post-btn').addEventListener('click', function () {
+            // step2: get comment text from the text area
+            const commentBox = document.getElementById("comment-text");
+            const trueComment = commentBox.value;
+            //step 3: add the comment:
+            // substep1:where to add
+            const commentPlace = document.getElementById("comment-section");
+            const p = document.createElement('p');
+            p.innerText = trueComment;
+            commentPlace.appendChild(p);
+            commentBox.value = '';
+
+
+
+
+
+        })
+
+
+
+    </script>
+    <script src="js/comment.js"></script>
 </body>
 
 </html>
